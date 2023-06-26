@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react'
 
 async function getData() {
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts45151', {
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
     next: {
       revalidate: 60,
     }
