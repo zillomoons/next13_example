@@ -1,42 +1,50 @@
-:root{
-  --color-bg: #272527;
-  --color-navlink: white;
-  --color-active: #4f93e8;
-}
-
-*{
+* {
   box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #2C2C32;
+  --color-active: #0f7dc6;
+}
+
+body {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1{
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-header{
+header {
   background-color: var(--color-bg);
-  height: 70px;
+  padding: 2rem 0;
   text-align: center;
-  padding-top: 25px;
-}
-header a{
-  margin-right: 10px;
-  color: var(--color-navlink);
-  text-decoration: none;
 }
 
-header a:hover{
+header>a {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+header>a:hover {
   text-decoration: underline;
 }
-.container{
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.container {
   max-width: 900px;
   padding-left: 2rem;
   padding-right: 2rem;
   margin: 0 auto;
 }
 
-main{
+main {
   min-height: calc(100vh - 85px - 22px);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -47,11 +55,27 @@ main a {
   color: var(--color-bg);
 }
 
-main a:hover{
+main a:hover {
   text-decoration: underline;
 }
 
-.active{
-  cursor: default;
+.active {
   color: var(--color-active);
+  cursor: default;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form button {
+  background-color: var(--color-active);
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+input[type="search"] {
+  padding: 0.5rem 1rem;
 }

@@ -1,12 +1,16 @@
+import Navigation from '@/app/components/Navigation'
 import Link from 'next/link'
-import React from 'react'
+
+const navItems = [
+  {label: 'Home', href: '/'},
+  {label: 'Blog', href: '/blog'},
+  {label: 'About', href: '/about'},
+]
 
 const MyHeader = () => {
   return (
     <header>
-      <Link href='/'>Home</Link>
-      <Link href='/blog'>Blog</Link>
-      <Link href='/about'>About</Link>
+      <Navigation navLinks={navItems} />
     </header>
   )
 }
