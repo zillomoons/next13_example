@@ -1,5 +1,5 @@
-import { PostSearch } from '@/app/components/PostSearch';
-import {Posts} from '@/app/components/Posts';
+import { PostSearch } from '@/components/PostSearch';
+import { Posts } from '@/components/Posts';
 import { Metadata } from 'next';
 
 
