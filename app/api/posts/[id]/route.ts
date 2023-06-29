@@ -1,6 +1,14 @@
 import { NextResponse } from "next/server";
 import { headers, cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
+import { posts } from "@/app/api/posts/posts";
+
+export async function GET(req: Request,
+  { params }: { params: { id: string } }) {
+  const { id } = params;
+  const post = posts.filter(post => post.id.toString() === id)[0];
+  return NextResponse.json(post);
+};
 
 export async function DELETE(req: Request,
   { params }: { params: { id: string } }) {

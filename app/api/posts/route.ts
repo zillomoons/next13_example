@@ -4,7 +4,6 @@ import { posts } from "@/app/api/posts/posts";
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
   const query = searchParams.get('q');
-
   let currentPosts = posts;
 
   if (query) {

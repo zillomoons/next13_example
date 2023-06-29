@@ -14,4 +14,14 @@ export const posts = [
     title: "Barcelona won La Liga",
     body: "Some info about Spanish football",
   },
+  {
+    id: 4,
+    title: "Panda CSS was released",
+    body: "Some info about Spanish football",
+  },
+  {
+    id: 5,
+    title: "5 Mistakes I Made When Starting My First React Project",
+    body: "Some info about Spanish football",
+  },
 ]
